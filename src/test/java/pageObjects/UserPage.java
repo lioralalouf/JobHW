@@ -18,7 +18,7 @@ public class UserPage extends BasePage {
 	public String getUserPageTitle() {
 		return getTitle();	
 	}
-		
+	//choosing category for A list of categories	
 	public void chooseUserCategory(String text) {
 		click(profileBtn);
 		for (WebElement el : profileDropdown) {
@@ -29,7 +29,7 @@ public class UserPage extends BasePage {
 			}
 		}
 	}
-		
+	//choosing an option for the prifile's list oprtions		
 	public void chooseProfileOpt(String text) {
 		for (WebElement el : profileDropdown) {
 			String option = el.getText();

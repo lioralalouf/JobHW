@@ -27,7 +27,7 @@ public class LoginPage extends BasePage {
 	public String getLoginPageTitle() {
 		return getTitle();	
 	}
-	
+	//full process for fill in login form and login
 	public void Login(String email, String password) {
 		fillText(userName, email);
 		fillText(userPassword, password);
